@@ -1,0 +1,40 @@
+html {
+  cursor: default;
+  scroll-behavior: smooth;
+}
+
+.expanded {
+  height: 2260px !important;
+}
+
+.reviews {
+  overflow: hidden;
+  transition: height 1s ease;
+  height: 220px;
+}
+
+@media screen and (min-width: 768px) {
+  .video {
+    border-radius: 24px;
+  }
+
+  .expanded {
+    height: 2000px !important;
+  }
+
+  .reviews {
+    height: 270px;
+  }
+}
+
+input[type="checkbox"]:checked {
+  background: url(./images/ptichka.png) center no-repeat;
+  background-size: contain;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
